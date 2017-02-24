@@ -1,0 +1,42 @@
+<div class="mashup"></div>
+<div id="share_dialog" class="wrapper">
+	<h2>Share with Friends</h2>
+	<ul>
+		<li class="w-e active" onclick="return changeSharePanel('share_with_email_panel', this);">
+			<a href="#"></a>
+		</li>
+		<li class="w-f" onclick="return changeSharePanel('share_with_facebook_panel', this);">
+			<a href="#"></a>
+		</li>
+		<li class="w-n" onclick="return changeSharePanel('share_with_twitter_panel', this);">
+			<a href="#"></a>
+		</li>
+	</ul>
+	<div id="share_with_email_panel" class="share_panel">
+  		<h3>Email This Amazing Product to Three Best Friends!</h3>
+    	<div class="anniu">
+    		<a id="share_to_email_btn">
+    			<img src="<?php echo themeResourceURI('images/sign.png');?>" />
+    		</a>
+    	</div>
+	</div>
+	<div id="share_with_facebook_panel" class="share_panel">
+        <h3>Connect with Facebook to share with friends! </h3>
+        <div class="anniu">
+        	<a id="share_to_facebook_btn" href="#">
+            	<img src="<?php echo themeResourceURI('images/fsign.png');?>" />
+            </a>
+        </div>
+    </div>
+    <div id="share_with_twitter_panel" class="share_panel">
+    	<h3>Connect with Twitter to share with friends! </h3>
+        <div class="anniu">
+            <a id="share_to_twitter_btn" href="#">
+                 <img src="<?php echo themeResourceURI('images/nsign.png');?>" />
+            </a>
+        </div>
+    </div>
+	<a href="#" class="close_btn"><img src="<?php echo themeResourceURI('images/cha.png');?>"/></a>
+</div>
+<?php $this->render('modules/email_panel.phtml');?>
+<?php $this->render('modules/shared_info.phtml');?>

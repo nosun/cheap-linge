@@ -1,0 +1,50 @@
+<div id="email_panel">
+    <form>
+	    <input type="hidden" id="email_image" name="image" value="" />
+	    <div id="header">
+	        <span class="email_logo"></span>
+	        <h3>Email</h3>
+	        <a class="close_btn" href="#" title="Close"></a>
+	    </div>
+	    <div id="body">
+	    	<div class="emailrow">
+	        	<label>Recipient 1:</label>
+	            <p><span class="emailrow-input"><input id="email_recipient" name="recipients[]" maxlength="255" spellcheck="true" placeholder="" type="text" value=""></span></p>
+	        </div>
+	        <div class="emailrow">
+	        	<label>Recipient 2:</label>
+	            <p><span class="emailrow-input"><input id="email_recipient" name="recipients[]" maxlength="255" spellcheck="true" placeholder="" type="text" value=""></span></p>
+	        </div>
+	        <div class="emailrow">
+	        	<label>Recipient 3:</label>
+	            <p><span class="emailrow-input"><input id="email_recipient" name="recipients[]" maxlength="255" spellcheck="true" placeholder="" type="text" value=""></span></p>
+	        </div>
+	        <div class="emailrow">
+	        	<label>From:</label>
+	            <p><span class="emailrow-input atfrom"><input id="email_from" name="from" maxlength="255" spellcheck="true" placeholder="" type="text" value=""></span></p>
+	        </div>
+			<div class="emailrow">
+				<label>Subject:</label>
+				<p><span class="emailrow-input"><input id="email_subject" name="subject" maxlength="1024" spellcheck="true" placeholder="" type="text" value=""></span></p>
+			</div>
+			<div class="msg_body">
+				<span>
+					<textarea id="email_body" name="body"></textarea>
+				</span>
+			</div>
+			<div id="sharelink">
+	        	<label>URL:</label>
+	        	<p><input id="email_link" name="link" type="text" readonly="readonly" value=""></p>
+	        	<div class="clears"></div>
+	    	</div>
+	    	<div id="send">
+		        <div class="send-inner">
+		            <a id="send_email" class="btn-blue" title="Send Email">Send Email</a>
+		        </div>
+	    	</div>
+	    </div>
+    </form>
+    <div id="loading_mash">
+    	<img src="<?php echo themeResourceURI('images/loading_m.gif');?>">
+    </div>
+</div>
